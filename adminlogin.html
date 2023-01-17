@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="adminlogin.css" />
+    <title>Admin Login</title>
+  </head>
+  <body>
+    <div id="inn"></div>
+    <div class="box">
+      <form autocomplete="off">
+        <h2>Admin</h2>
+        <div class="inputBox">
+          <input type="text" id="nam" required />
+          <span>Userame</span>
+          <i></i>
+        </div>
+        <div class="error error-txt" id="useError">Username can't be blank</div>
+        <div class="inputBox">
+          <input type="password" id="password" required />
+          <span>Password</span>
+          <i></i>
+        </div>
+        <div class="error error-txt" id="passError">
+          Password can't be blank
+        </div>
+        <div class="links">
+          <a href="#">Forgot Password ?</a>
+          <!-- <a href="http://127.0.0.1:5503/sign%20Up.html">Signup</a> -->
+        </div>
+        <input type="submit" id="theButton" value="Login" />
+        <div class="error" id="PError">Wrong Password</div>
+        <div class="error" id="AError">Account not Found</div>
+      </form>
+    </div>
+    <script src="adminlogin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Word Cross/Sign In</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <!-- <h3 id="use" style="visibility: hidden;">Good morning <strong id="user"></strong></h3>
+    <h3 style="display: none;">you are in level <strong id="level"></strong></h3>
+    <h3 style="display: none;">Your number of new words = <strong id="new"></strong></h3> -->
+
+    <div id="inn"></div>
+    <!-- <input id="nam" type="text" placeholder="username" />
+    <input id="password" type="password" placeholder="password" />
+    <button id="theButton">post</button> -->
+    <!-- <button id="rr" onclick="redi()">red</button> -->
+    <div class="box">
+      <form autocomplete="off">
+        <h2>Sign in</h2>
+        <div class="inputBox">
+          <input type="text" id="nam" required />
+          <span>Userame</span>
+          <i></i>
+        </div>
+        <div class="error error-txt" id="useError">Username can't be blank</div>
+        <div class="inputBox">
+          <input type="password" id="password" required />
+          <span>Password</span>
+          <i></i>
+        </div>
+        <div class="error error-txt" id="passError">
+          Password can't be blank
+        </div>
+        <div class="links">
+          <a href="http://localhost:5503/forgotpassword.html"
+            >Forgot Password ?</a
+          >
+          <a href="http://127.0.0.1:5503/sign%20Up.html">Signup</a>
+        </div>
+        <input type="submit" id="theButton" value="Login" />
+        <div class="error" id="PError">Wrong Password</div>
+        <div class="error" id="AError">Account not Found</div>
+      </form>
+    </div>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Word Cross/Sign Up</title>
+  </head>
+  <body>
+    <div class="box">
+      <form autocomplete="off">
+        <h2>Sign Up</h2>
+        <div class="inputBox">
+          <input type="text" id="nam" required />
+          <span>Userame</span>
+          <i></i>
+        </div>
+        <div class="error error-txt" id="useError">Username can't be blank</div>
+        <div class="inputBox">
+          <input type="password" id="password" required />
+          <span>Password</span>
+          <i></i>
+        </div>
+        <div class="error error-txt" id="passError">
+          Password can't be blank
+        </div>
+        <div class="links">
+          <a href="#" style="visibility: hidden">Forgot Password ?</a>
+          <a href="http://127.0.0.1:5503/login.html" style="padding: 1em"
+            >Sign In?</a
+          >
+        </div>
+        <input type="submit" id="theButton" value="Sign Up" />
+        <div class="error" id="PError">Wrong Password</div>
+        <div class="error" id="AError">Account not Found</div>
+        <div class="error" id="scc">
+          Registration Sucessful, Login to continue
+        </div>
+        <div class="error" id="EError">
+          An account with this user name already exists
+        </div>
+      </form>
+    </div>
+    <script src="signup.js"></script>
+  </body>
+</html>

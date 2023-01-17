@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#btn {
+  margin: 10px;
+  width: 120px;
+  background-color: rgb(96, 96, 235);
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+.num {
+  text-align: center;
+  padding: 2px;
+  margin: 10px;
+  width: 250px;
+  height: 30px;
+  font-size: 25px;
+  background-color: red;
+  border-radius: 4px;
+  color: white;
+}
