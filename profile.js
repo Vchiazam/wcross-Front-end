@@ -21,17 +21,17 @@ let resetButton = document.querySelector(".resetButton");
 const showSucess = document.querySelector(".showSucess");
 let profileSideImg = document.querySelector(".image");
 let userToken = JSON.parse(document.cookie);
-if (userToken["user"] === "") window.location = "http://127.0.0.1:5503/";
+if (userToken["user"] === "") window.location = "/index.html";
 
 Edit.addEventListener("click", () => {
   pp.style.display = "inline";
   profileSideImg.style.display = "none";
 });
 play.addEventListener("click", () => {
-  window.location.replace("http://127.0.0.1:5503/play.html");
+  window.location.replace("/play.html");
 });
 dash.addEventListener("click", () => {
-  window.location.replace("http://127.0.0.1:5503/dashboard.html");
+  window.location.replace("/dashboard.html");
 });
 
 function get() {
@@ -208,7 +208,7 @@ deletAccount.onclick = () => {
       };
       let cookieString = JSON.stringify(cookieHolder);
       document.cookie = cookieString;
-      window.location = "http://127.0.0.1:5503/";
+      window.location = "/index.html";
     });
 };
 

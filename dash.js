@@ -8,10 +8,10 @@ let new1 = document.getElementById("new");
 let userBtn = document.querySelector(".userBtn");
 let greet = document.getElementById("greet");
 document.getElementById("con").addEventListener("click", () => {
-  window.location = "http://127.0.0.1:5503/play.html";
+  window.location = "/play.html";
 });
 userBtn.addEventListener("click", () => {
-  window.location.replace("http://127.0.0.1:5503/profile.html");
+  window.location.replace("/profile.html");
 });
 // hour
 // if hour is between 6am and 12am, greet good morning
@@ -37,7 +37,7 @@ document.getElementById("signout").addEventListener("click", () => {
   };
   let cookieString = JSON.stringify(cookieHolder);
   document.cookie = cookieString;
-  window.location = "http://127.0.0.1:5503/";
+  window.location = "/index.html";
 });
 // let cookieHolder = {
 //         'user' : '',
@@ -67,8 +67,7 @@ function get() {
       userBtn.innerHTML = response["user"];
       ExToken = response["message"];
       console.log(ExToken);
-      if (ExToken === "Unathorized")
-        window.location = "http://127.0.0.1:5503/login.html";
+      if (ExToken === "Unathorized") window.location = "/login.html";
       // document.cookie = null;
 
       // console.log(user)

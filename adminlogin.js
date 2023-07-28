@@ -77,8 +77,7 @@ function login() {
       let cookieString = JSON.stringify(cookieHolder);
       console.log(cookieString);
       document.cookie = cookieString;
-      if (cookieHolder["user"] != null)
-        window.location = "http://127.0.0.1:5503/admin.html?token=";
+      if (cookieHolder["user"] != null) window.location = "/admin.html?token=";
 
       // if (getToken !== null)
       //     document.cookie = getToken
@@ -92,7 +91,7 @@ let x = document.cookie;
 // console.log(x)
 
 function checkCookie() {
-  if (x != "null") window.location.replace("http://127.0.0.1:5503/Admin.html");
+  if (x != "null") window.location.replace("/Admin.html");
   // console.log('Red');
 }
 // checkCookie();

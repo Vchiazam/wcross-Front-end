@@ -1,8 +1,7 @@
 // let accessToken = JSON.parse(document.cookie);
 // console.log(accessToken);
 function checkCookie() {
-  if (accessToken["user"] !== "")
-    window.location.replace("http://127.0.0.1:5503/dashboard.html");
+  if (accessToken["user"] !== "") window.location.replace("/dashboard.html");
   // console.log('Red');
 }
 // checkCookie();

@@ -6,7 +6,7 @@ const nameForm = document.querySelector(".nameForm");
 const showError1 = document.querySelector(".showError1");
 const showError2 = document.querySelector(".showError2");
 let userToken = JSON.parse(document.cookie);
-if (userToken["user"] === "") window.location = "http://127.0.0.1:5503/";
+if (userToken["user"] === "") window.location = "/index.html";
 
 // let x = document.cookie;
 
@@ -88,7 +88,7 @@ next2.onclick = () => {
             //  console.log('hdh')
             (showError2.style.background = "rgba(70, 255, 101, 0.76)"),
               setTimeout(() => {
-                window.location.replace("http://localhost:5503/login.html");
+                window.location.replace("/login.html");
               }, 2000);
           else if (jsonResponse["mess"] != null)
             // console.log('hdh')

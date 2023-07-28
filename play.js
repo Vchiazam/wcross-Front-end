@@ -21,7 +21,7 @@ let pop = document.getElementById("pop");
 let body = document.querySelector("body");
 let ansBlock = [];
 let userToken = JSON.parse(document.cookie);
-if (userToken["user"] === "") window.location = "http://127.0.0.1:5503/";
+if (userToken["user"] === "") window.location = "/index.html";
 
 function get() {
   fetch("http://localhost:5000/game", {
@@ -124,7 +124,7 @@ function post1() {
       if (message === `try again`) dis.innerText = "";
 
       if (message === "Congratulations, level completed")
-        window.location.replace("http://127.0.0.1:5503/completed.html");
+        window.location.replace("/completed.html");
 
       if (message === "correct") dis.innerText = "";
 
@@ -147,5 +147,5 @@ dashPlay.addEventListener("click", () => {
   pop.style.display = "none";
 });
 dashDash.addEventListener("click", () => {
-  window.location.replace("http://127.0.0.1:5503/dashboard.html");
+  window.location.replace("/dashboard.html");
 });
