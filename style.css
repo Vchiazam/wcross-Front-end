@@ -115,7 +115,8 @@ header label {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(images/HG.png) no-repeat;
+  background: url(https://res.cloudinary.com/dgj2rhqd0/image/upload/v1690584959/HG_nbqiqn.png)
+    no-repeat;
   background-size: cover;
   background-position: center;
 }
